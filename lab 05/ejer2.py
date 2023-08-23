@@ -1,0 +1,5 @@
+palabra = ("Soy profesor y me encanta inspirar y enseñar a la gente")
+metodo1 = palabra.split()
+metodo2 = set(palabra)
+print(metodo1)
+print(metodo2)       
