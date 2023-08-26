@@ -10,25 +10,24 @@ persona = {
  'zipcode': '02210'
  }
 }
-lista = []
-for habilidades in persona['skills']:
-    lista.append(habilidades)
-print("Las siguientes habilidades lo conforma:",lista)
-#
 
-for valor in persona['skills']:
-    if valor == ('Python'):
-        print('El valor que se obtuvo fue:',"'",valor,"'")
-'''
-if 'skills' in persona and 'Python' in persona['skills']:
-    print("La persona tiene la habilidad 'Python'.")
-    '''
-#
-'''
-for valor in persona['skills']:
-    if valor == 'JavaScript' and valor == 'React':
-        print('los unicos valores son:', lon(1 and 2))
-'''
+#A SOLUCION
+
+if 'skills' in persona:
+    habilidades = persona['skills']
+    if len(habilidades) >= 3:
+        habilidad_media = habilidades[len(habilidades) // 2]
+        print("Habilidad del medio:", habilidad_media)
+
+# B SOLUCION
+
+if 'skills' in persona:
+    habilidades = persona['skills']
+    if 'Python' in habilidades:
+        print("La persona tiene habilidad en Python.")
+
+# C SOLUCION
+
 if 'skills' in persona:
     skills = persona['skills']
     if skills[1 and 2] == ['JavaScript', 'React']:
