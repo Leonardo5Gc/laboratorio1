@@ -1,10 +1,5 @@
 import countries_data
-
-# otro_archivo.py
 from countries_data import los_idiomas_mas_hablados, los_paises_mas_poblados
-
-# Supongamos que tienes la lista de países (countries) aquí
-# countries = [...]
 
 top_languages = los_idiomas_mas_hablados()
 print("Top 10 most spoken languages:")
